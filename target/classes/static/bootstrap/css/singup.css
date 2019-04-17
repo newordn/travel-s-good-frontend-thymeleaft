@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url('../../images/cover.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+}
+.my-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 400px;
+    padding: 40px;
+    transform: translate(-50%,-50%) ;
+    /*  background-color: rgba(35, 5, 50, 8);*/
+    border-radius: 12px;
+    background-color: rgba(236, 105, 29,-10);
+    box-sizing: border-box;
+    box-shadow: 0 15px 15px 10px white;
+}
+/*.my-box for sign up */.up{
+    top: 70%;
+    height: 800px;
+}
+.my-box h2{
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+.my-box .inputBox{
+    position: relative;
+}
+.my-box .inputBox input{
+    width: 95%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 3px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.my-box .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff; 
+    pointer-events: none;
+    transition: 0.5s;
+}
+.my-box .inputBox input:focus ~ label{
+    top: -35px;
+    left: 0;
+    border: none;
+    font-size: 16px;
+    color: rgb(236, 105, 29);
+}
+.my-box .inputBox input.form-contro{
+    border: none;
+    outline: none;
+}
+.my-box .inputBox .btn{
+    margin: 15px;
+}
+.my-box .inputBox .btn a{
+    border-style: none;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.my-box .inputBox button[type="submit"],
+.my-box .inputBox button[type="button"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;   
+}
+.my-box .inputBox button[type="submit"]{
+    background: #03a9f4;
+}
+.my-box .inputBox button[type="button"]{
+    background: rgb(236, 105, 29);
+}
+ .inputBox .bt ,.inputBox .btl{
+    position: absolute;
+    display: flex;
+    left: 20%;
+}

@@ -1,0 +1,11 @@
+.all-height
+{
+    height:100%;
+}
+body
+{
+    background-image: url("../../images/background.jpg");
+    background-position:center;
+    background-color:orange;
+    background-blend-mode: darken;
+}

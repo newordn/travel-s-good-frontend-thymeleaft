@@ -1,0 +1,159 @@
+@charset "utf-8";
+/* 
+    Created on : 25 mars. 2019, 16:45:21
+    Author     : Carteur
+*/
+
+html { font-size: 14px; }
+
+*,body,nav.menu-nav,div.malcolone,div.maligne{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial,Helvetica, sans-serif;
+    font-size: 1.1em;
+    color: #ffffff;
+    line-height:1.5;
+    text-align: center;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+h1,h2,h3,p{
+    margin: 0;
+    padding: 1em 0;
+}
+.btn-infos{
+    display: inline-block;background: #333;
+    color: blue;
+    padding: 1em 2em;
+    background: #fff;
+    border: 0px solid rgb(14, 10, 8);
+    margin: .5em 0;
+}
+h4 a.btn-infos {
+    text-decoration: none;
+}
+.btn-infos:hover{
+    background: #eb4918;
+}
+/* header */
+#showcase{ 
+    min-height: 450px;
+    color:#fff;
+    text-align: center;
+}
+#showcase .bg-image{ 
+    position: absolute;
+    background: url("../../images/cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 580px;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* menu*/
+nav{
+    width: 100%;
+    padding: 0;
+    margin: 0px 0px 0px 100px;
+    background-position: center;
+}
+nav.menu-nav ul{
+    width: 100%;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+}
+nav.menu-nav ul li.btns{
+    list-style: none;
+    background: #00316b;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em 2em;
+    margin: 0;/*
+    padding: 1em 1.5em;*/
+}
+nav.menu-nav ul.btn-success{
+    padding-right: 0px;
+}
+nav.menu-nav ul li.btns:hover{
+    background: #eb4918;
+}/*
+nav.menu-nav ul li.btns.active a{
+    background: #eb4918;
+}*/
+nav.menu-nav ul li.btns:hover a{
+    transition: 0.3s all;
+}
+nav.menu-nav ul li.btns a{
+    color: #ffffff;
+    list-style: none;
+    text-decoration: none;
+}
+div.toggle{
+    width: 100%;
+    height: 80px;
+    padding: 10px 30px;
+    background: #001f44;
+    text-align: right;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 40px;
+    display: none;
+}
+/* corps*/
+div.my-container{
+    width: 100%;
+    display: block;
+    border: 0px solid green;
+    /*margin: top right bottom left*/
+    margin: 20px 30px 10px 20px;
+    padding: 0;
+}
+span.sarted{
+    text-align: right;
+    align-content: center;
+    align-items: flex-end;
+    align-self: end;
+    justify-content: end;
+}
+div.maligne{
+    border: 0px solid rgb(2, 18, 61);
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+}
+div.malcolone{
+    border: 4px solid #5a050a;
+    text-decoration: none;
+}
+@media (max-width: 680px) {
+    html { font-size: 14px; }
+    div.toggle{
+        display: block;
+    }
+    ul{
+        width: 100%;
+        display: none;
+    }
+    ul li{
+        display: block;
+        text-align: center;
+    }
+    
+    .active{
+        display: block;
+    }
+}
+@media (min-width: 768px) {
+    html { font-size: 16px; }
+}
+@media (max-width: 200px) {
+    html { font-size: 10px; }
+}

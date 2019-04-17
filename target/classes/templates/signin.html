@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml" class="all-height">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" th:href="@{/bootstrap/index/bootstrap.min.css}" />
+    <link type="text/css" rel="stylesheet" th:href="@{/bootstrap/fontawesome/css/fontawesome.min.css}" />
+    <link type="text/css" rel="stylesheet" th:href="@{/css/signin.css}" />
+    <title>Sign In </title>
+</head>
+
+<body class="all-height">
+    <div class="container d-flex flex-row justify-content-center all-height align-items-center">
+
+<div class="rounded border border-light">
+        <form>
+            <div>
+                <input type="text" name="userNameEmail" id="userNameEmail" placeholder="Email or Username" />
+            </div>
+            <div>
+                <input type="password" name="userPassword" id="userPassword" placeholder="Password">
+            </div>
+        </form>
+    </div>
+</div>
+    <script th:src="@{/bootstrap/js/jquery-3.3.1.min.js}"> </script>
+    <script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+</body>
+
+</html>

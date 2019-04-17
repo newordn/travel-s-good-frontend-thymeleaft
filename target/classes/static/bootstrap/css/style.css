@@ -1,0 +1,135 @@
+
+@charset "utf-8";
+/* 
+    Created on : 24 mars. 2019, 02:45:21
+    Author     : Carteur
+*/
+body{
+    margin: 0;
+}
+
+div{
+    margin: 0;
+}
+
+html { font-size: 14px; }
+
+@media (min-width: 768px) {
+  html { font-size: 16px; }
+}
+
+div.container{
+    display: flex;
+    /* margin: top right bottom left*/
+    margin-top: 20px ;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    padding: 0;
+    max-width: 100%; 
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: flex-start ; 
+    align-content: space-around;
+}
+div.flex-row{
+    position: fixed relative;
+    justify-items: center;
+    justify-content: flex-start;
+}
+div.fils,div.fils1,div.footer1,div.footer2{
+    display: block;
+    border-color: rgb(35, 148, 177);
+}
+div.footer1:nth-of-type(1) { 
+    flex: 1 100%;
+    
+    background-color: rgba(2, 2, 131, 0.849);
+}
+div.footer1:nth-of-type(2) { 
+    flex: 1;
+    background-color: darkred;
+}
+div.footer1:nth-of-type(3) { 
+    flex: 1;
+    background-color: orangered
+}
+div.footer1:nth-of-type(4) { 
+    flex: 1;
+    background-color: white;
+}
+
+
+div.fils:nth-of-type(1){
+    order: 2;
+    flex-basis : 30%;
+    background-color: orangered
+}
+div.fils:nth-of-type(2){
+    order: 1;
+    flex-grow: 1;
+    max-width: 900px;
+    background-color: green;
+}
+div.fils:nth-of-type(3){
+    order: 3;
+    flex-basis: 100%;
+    background-color: aliceblue;
+}
+/**
+* Deuxieme containeur
+**/
+div>div.container,div>div.container1{
+    display: flex;
+    padding: 0;
+    margin-top: 20px ;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    flex-flow: column  ;
+    align-items: stretch;
+    align-content: space-around;
+    justify-content: flex-start; 
+}
+div>div.container1{
+    flex-flow: row  wrap;
+}
+div.fils1 {
+    border-color: rgb(254, 148, 177);
+}
+div.fils2 {
+    display: block;
+}
+div.fils3 {
+    display: block;
+}
+div.fils1:nth-of-type(1){
+    order: 1;
+    flex: 1 100%;
+    background-color: yellow;
+}
+div.fils1:nth-of-type(2){
+    order: 2;
+    flex: 1 100%;
+    background-color: blue;
+}
+div.fils1:nth-of-type(3){
+    order: 3;
+    flex: 1;
+    background-color: aqua;
+}
+div.fils1:nth-of-type(4){
+    order: 4;
+    flex: 1;
+    background-color: black;
+}
+div.fils1:nth-of-type(5){
+    order: 5;
+    flex: 1 100%;
+    background-color: chocolate;
+}
+div.fils1:nth-of-type(6){
+    order: 6;
+    flex: 1 100%;
+    background-color: tomato;
+}
