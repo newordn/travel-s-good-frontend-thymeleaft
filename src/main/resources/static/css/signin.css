@@ -10,8 +10,6 @@ body
 {
     background-image: url("../../images/bus.png") ;
     background-position:center;
-    background-color:orange;
-    background-blend-mode: darken;
 }
 .shadow
 {
