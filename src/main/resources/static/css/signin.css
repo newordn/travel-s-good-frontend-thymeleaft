@@ -2,10 +2,20 @@
 {
     height:100%;
 }
+.font-small
+{
+    font-size:0.8em;
+}
 body
 {
-    background-image: url("../../images/background.jpg");
+    background-image: url("../../images/bus.png") ;
     background-position:center;
     background-color:orange;
     background-blend-mode: darken;
+}
+.shadow
+{
+    z-index : 499999999999;
+    box-shadow: 0 0px 40px 0 rgb(150,150,150);
+
 }
