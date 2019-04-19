@@ -1,69 +1,35 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.w3.org/1999/xhtml">
+<html xmlns:th="http://www.w3.org/1999/xhtml" class="all-height">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="icon" href="inc/images/initialeCarteur.ico">-->
-
-    <link type="text/css" rel="stylesheet" th:href="@{/bootstrap/css/singup.css}"/>
     <link type="text/css" rel="stylesheet" th:href="@{/bootstrap/index/bootstrap.min.css}" />
-    <link type="text/css" rel="stylesheet" th:href="@{/bootstrap/css/bootstrap-theme.min.css}"/>
     <link type="text/css" rel="stylesheet" th:href="@{/bootstrap/fontawesome/css/fontawesome.min.css}" />
     <link type="text/css" rel="stylesheet" th:href="@{/bootstrap/fontawesome/css/all.min.css}" />
-    <title>SingUp </title>
+    <link type="text/css" rel="stylesheet" th:href="@{/css/signin.css}" />
+    <title>Sign Up </title>
 </head>
 
-<body style="background-color: #504e4d;">
-    <div class="my-box up">
-        <h2>GET STARTED</h2>
-        <span class="error"></span>
-        <form>
-            <div class="form-group inputBox">
-                <input type="text" name="userFirstName" id="userFirstName" class="form-control" placeholder="" />
-                <label for="userFirstName"> Nom ....<i class="fa fa-user" aria-hidden="true"></i></label><br />
-            </div>
-            <div class="form-group inputBox">
-                <input type="text" name="userLastName" id="userLastName" class="form-control" placeholder="" />
-                <label for="userLastName"> Prenom ....<i class="fa fa-user" aria-hidden="true"></i></label><br />
-            </div>
-            <div class="form-group inputBox">
-                <input type="text" name="userName" id="userName" class="form-control" placeholder="" />
-                <label for="userName"> Username ....<i class="fa fa-user" aria-hidden="true"></i></label><br />
-            </div>
-            <div class="form-group inputBox">
-                <input type="text" name="userEmail" id="userEmail" class="form-control" placeholder="" />
-                <label for="userEmail"> Email .... <i class="fa fa-envelope" aria-hidden="true"></i></label><br />
-            </div>
-            <div class="form-group inputBox">
-                <input type="password" class="form-control" name="userPassword" id="userPassword" placeholder="">
-                <label for="userPassword">Mot de Password ....<i class="fa fa-eye-slash"
-                        aria-hidden="true"></i></label><br />
-            </div>
-            <div class="form-group inputBox">
-                <input type="password" class="form-control" name="confirm" id="confirm" placeholder="">
-                <label for="confirm"></i> Confirmer Mot de Password ....<i class="fa fa-eye-slash"
-                        aria-hidden="true"></i>
-                </label><br />
-            </div>
-            <div class="form-group inputBox">
-                <input type="password" class="form-control" name="confirm" id="confirm" placeholder="">
-                <label for="confirm">T&eacute;l&eacute;phone ....<i class="fa fa-phone"
-                        aria-hidden="true"></i></label><br />
-            </div>
-            <div class="form-group inputBox">
-                <div class="bt">
-                    <button type="submit" class="btn ">Submit</button>
-                    <button type="button" class="btn "><a href="http://" target="_blank" rel="noopener noreferrer">Reset
-                            PassWord</a></button>
-                </div>
-            </div>
-        </form>
-    </div>
+<body class="all-height">
+<div class="container d-flex flex-row pl-5 pr-5 justify-content-center all-height align-items-center">
 
-    <script th:src="@{/bootstrap/js/scroll.js}"> </script>
-    <script th:src="@{/bootstrap/js/jquery-3.3.1.min.js}"> </script>
-    <script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+    <div class="rounded row border border-light shadow  pt-5 pb-5 pl-2 pr-2 bg-white">
+        <div class="col-md-6">
+            <h1 class="mb-5"><strong>TG</strong></h1>
+            <p class="mb-5">You want to travel you want travel's good.</p>
+            <div  style="width: 240px" class="mb-5">
+                <img th:src="@{/images/bus2.png}" alt="bus" style="max-width:100%;height:auto" class="img-fluid" >
+            </div>
+            <p class="font-small"><i>By signing up, you agree to travel's good <strong>Terms and Conditions </strong>& <strong>Privacy Policy</strong></i></p>
+        </div>
+        <div class="col-md-6 align-self-center pl-5 pb-5 pr-5">
+            <div th:replace="/fragments/signupFormFragment.html :: signupFormFragment"></div>
+        </div>
+    </div>
+</div>
+<script th:src="@{/bootstrap/js/jquery-3.3.1.min.js}"> </script>
+<script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
 </body>
 
 </html>
