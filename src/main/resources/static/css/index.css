@@ -13,13 +13,12 @@ body
 .nav
 {
     background-color: white;
-    opacity:0.95;
-    border-radius: 10px;
+    opacity:0.90;
     padding: .6rem;
 }
 header{
     font-family: 'Abril Fatface', sans-serif;
-    margin-top:1rem;
+
 }
 header a
 {
