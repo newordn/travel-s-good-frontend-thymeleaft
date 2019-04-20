@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Created by Neword on 14/04/2019.
  */
 @Controller
-@RequestMapping("test/view")
+@RequestMapping("/test/view")
 public class ViewTestController {
 
     @GetMapping("/home")
