@@ -1,24 +1,25 @@
 html,body
 {
     height: 100%;
+    font-family: 'Abril Fatface', sans-serif;
 }
 body
 {
     background-image: url("../../images/background.jpg");
     background-position: center center;
-    background-color: rgb(150,150,150);
+    background-color: rgb(80,80,80);
     background-repeat: no-repeat;
     background-blend-mode: overlay;
 }
-.nav
+.bg-orange
+{
+    background-color:orange;
+}
+.white-transparent-bg
 {
     background-color: white;
     opacity:0.90;
     padding: .6rem;
-}
-header{
-    font-family: 'Abril Fatface', sans-serif;
-
 }
 header a
 {
@@ -31,4 +32,21 @@ header nav li a
 input::-webkit-input-placeholder
 {
     color:orange !important;
+}
+.footer-nav li
+{
+    list-style : none;
+}
+.footer-nav a
+{
+    color: black !important;
+}
+.footer-nav i
+{
+
+    color : orange;
+}
+.text-orange
+{
+    color:orange;
 }
