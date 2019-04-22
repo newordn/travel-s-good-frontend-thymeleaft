@@ -1,0 +1,34 @@
+html,body
+{
+    height: 100%;
+}
+body
+{
+    background-image: url("../../images/background.jpg");
+    background-position: center center;
+    background-color: rgb(150,150,150);
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+.nav
+{
+    background-color: white;
+    opacity:0.90;
+    padding: .6rem;
+}
+header{
+    font-family: 'Abril Fatface', sans-serif;
+
+}
+header a
+{
+    color : orange;
+}
+header nav li a
+{
+    color:orange !important;
+}
+input::-webkit-input-placeholder
+{
+    color:orange !important;
+}

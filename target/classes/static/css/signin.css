@@ -8,12 +8,13 @@
 }
 body
 {
-    background-image: url("../../images/bus.png") ;
+    background-image: url("../../images/bus.jpg") ;
     background-position:center;
 }
 .shadow
 {
     z-index : 499999999999;
     box-shadow: 0 0px 40px 0 rgb(150,150,150);
+    opacity:0.9;
 
 }
